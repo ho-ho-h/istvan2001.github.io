@@ -1,5 +1,4 @@
 
-
 fetch("http://localhost:3000/cars")
 .then(x => x.json())
 .then(y => cars_megjelenit(y));
@@ -65,6 +64,7 @@ function felvitel_cars(){
     )
     .then(x => x.text());
 }
+
 
 
 
