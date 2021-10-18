@@ -3,7 +3,7 @@ fetch("http://localhost:3000/cars")
 .then(x => x.json())
 .then(y => cars_megjelenit(y));
 
-function update(){
+function frissites(){
     setTimeout(function () {
         fetch("http://localhost:3000/cars")
         .then(x => x.json())
