@@ -20,21 +20,6 @@ h1{
     transition: transform .60s;
     box-shadow: 10px 10px 5px grey;
 }
-@media (max-width: 990px) {
-    .elefantkep{
-        height: 110px;
-        transition: transform .60s;
-    }
-}
-@media (min-width: 576px) and (max-width: 762px) {
-    .elefantkep{
-        height: 80px;
-        transition: transform .60s;
-    }
-}
-.elefantkep:hover{
-    transform: scale(1.12);
-}
 p{
     font-size: 18px;
 }
