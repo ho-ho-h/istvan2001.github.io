@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto</title>
+
+
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="stilus.css">
+
+
+</head>
+<body>
+
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th>Autó id</th>
+            <th>Autó Márka</th>
+            <th>Autó Tipus</th>
+            <th>Autó szín</th>
+            <th>Autó gyártási éve</th>
+            <th>Autó ára</th>
+          </tr>
+        </thead>
+        <tbody id="tablazat">
+          
+  
+        </tbody>
+      </table>
+
+<hr>
+
+
+<div style="padding-left: 15px;"> 
+  <p>Autó márka:</p>
+  <input type="text" id="marka" class="form-control" style="width: 20%;margin-bottom: 1%;">
+  <p>Autó tipus:</p>
+  <input type="text" id="tipus" class="form-control" style="width: 20%;margin-bottom: 1%;">
+  <p>Autó szín:</p> 
+  <input type="text" id="szin" class="form-control" style="width: 20%;margin-bottom: 1%;"> 
+  <p>Autó gyártási éve:</p>
+  <input type="text" id="gyartasiev" class="form-control" style="width: 20%;margin-bottom: 1%;">
+  <p>Autó ára:</p>
+  <input type="text" id="ar" class="form-control" style="width: 20%;margin-bottom: 1%;">
+  <button onclick="felvitel_cars(); update()" class="btn btn-primary">Felvitel</button>
+
+
+</div>
+
+
+
+<script src="alap.js"></script>
+</body>
+</html>
