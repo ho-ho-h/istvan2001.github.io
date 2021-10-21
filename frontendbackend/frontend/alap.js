@@ -1,16 +1,10 @@
-
+function cars(){
 fetch("http://localhost:3000/cars")
 .then(x => x.json())
 .then(y => cars_megjelenit(y));
-
-function frissites(){
-    setTimeout(function () {
-        fetch("http://localhost:3000/cars")
-        .then(x => x.json())
-        .then(y => cars_megjelenit(y)); 
-    }, 100);
 }
 
+cars();
 function cars_megjelenit(adatok){
     console.log(adatok);
 
@@ -62,7 +56,8 @@ function felvitel_cars(){
         headers: {"Content-type": "application/json; charset=UTF-8"}
     }
     )
-    .then(x => x.text());
+    .then(x => x.text())
+    .then(y =>{alert(y);cars();});
 }
 
 
